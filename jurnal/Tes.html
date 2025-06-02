@@ -1,0 +1,92 @@
+<main id="main" class="site-main hfeed">
+    <div data-elementor-type="wp-page" data-elementor-id="1021" class="elementor elementor-1021">
+      <style>
+        body, html {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          overflow-x: hidden;
+        }
+        .video-header {
+          position: relative;
+          width: 100%;
+          height: auto; /* Tidak fixed height */
+          overflow: hidden;
+        }
+        .video-header video {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+        .team-content {
+          padding: 40px 20px;
+          position: relative;
+          z-index: 2; /* Pastikan di atas video jika ada overlap */
+          background: white; /* Background konten */
+          margin-top: 0; /* Sesuaikan jika perlu */
+        }
+        .team-content h1 {
+          font-size: 2.5em;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+        .team-member {
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #eee;
+        }
+      </style>
+      
+      <div class="video-header">
+        <video id="introVideo1" autoplay muted playsinline>
+          <source src="1.mp4" type="video/mp4">
+          Browser tidak mendukung video
+        </video>
+      </div>
+      
+      <script>
+        document.getElementById("introVideo1").addEventListener("ended", function() {
+          this.pause();
+          this.currentTime = this.duration;
+        });
+      </script>
+      
+      <div class="video-header">
+        <video id="introVideo4" autoplay muted playsinline>
+          <source src="DONE.mp4" type="video/mp4">
+          Browser tidak mendukung video
+        </video>
+      </div>
+      
+      <script>
+        document.getElementById("introVideo4").addEventListener("ended", function() {
+          this.pause();
+          this.currentTime = this.duration;
+        });
+      </script>
+      
+      <!-- Konten Team -->
+      <div class="team-content">
+        <h1>MEET OUR TEAM</h1>
+        
+        <div class="team-member">
+          <h2>JUGHAL PARADIGIA ITS MARID MÄSTIN</h2>
+        </div>
+        
+        <div class="team-member">
+          <h2>HALL IBRAHIM YUKSEL</h2>
+          <p>Bendahara</p>
+        </div>
+        
+        <div class="team-member">
+          <h2>ISMAIL BINTANG</h2>
+          <p>Ketua Umum</p>
+        </div>
+        
+        <div class="team-member">
+          <h2>ALFAN FIROAUS</h2>
+          <p>Sekretaris</p>
+        </div>
+      </div>
+    </div>
+  </main>
